@@ -1,0 +1,37 @@
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+fun main() {
+
+    var aprovados = 0
+    var resposta: String
+
+    do {
+        print("Digite a primeira nota: ")
+        val nota1 = readLine()!!.toDouble()
+
+        print("Digite a segunda nota: ")
+        val nota2 = readLine()!!.toDouble()
+
+        val media = (nota1 + nota2) / 2
+        println("Média: $media")
+
+        if (media >= 9.5) {
+            println("Aluno aprovado!")
+            aprovados++
+        } else {
+            println("Aluno reprovado.")
+        }
+
+        print("\nCalcular a média de outro aluno? (S/N): ")
+        resposta = readLine()!!.uppercase()
+
+    } while (resposta == "S")
+
+    println("\nQuantidade de alunos aprovados: $aprovados")
+
+
+
+
+
+
+}
