@@ -1,0 +1,16 @@
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+fun main() {
+print("Digite o primeiro valor: ")
+val valor1  = readLine()!!.toDouble()
+var valor2: Double
+do {
+print("Digite o segundo valor (que seja maior que o número 0): ")
+  valor2 = readLine()!!.toDouble()
+    if (valor2 <= 0) {
+println("Valor inválido. Digite um número maior que 0.")
+}
+} while (valor2 <= 0)
+val resultado = valor1 / valor2
+    println("\nResultado da divisão: $resultado")
+}
