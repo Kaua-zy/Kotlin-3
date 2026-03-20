@@ -1,0 +1,16 @@
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+fun main() {
+    var soma = 0
+    var contador = 0
+    for (i in 15 ..100) {
+        soma += i
+        contador++
+
+
+    }
+val media = soma. toDouble() / contador
+    println("A média aritmética: $media")
+
+
+}
