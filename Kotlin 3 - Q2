@@ -1,0 +1,18 @@
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+fun main() {
+print("Digite o primeiro valor:" )
+val valor1 = readLine()!!.toDouble()
+   var valor2: Double
+    do {
+         print("Digite o segundo valor (que seja maior que zero): ")
+         valor2 = readLine()!!.toDouble()
+    if (valor2 <= 0) {
+        println("Valor inválido. Tente outro número.")
+    }
+
+} while (valor2 <= 0)
+println("\nValores informados: ")
+println("Primeiro valor: $valor1")
+println("Segundo valor: $valor2")
+}
