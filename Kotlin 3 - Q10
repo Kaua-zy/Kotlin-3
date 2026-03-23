@@ -1,0 +1,19 @@
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+fun main() {
+    var dentro = 0
+    var fora = 0
+    for (i in 1..10) {
+        print("Digite o valor $i: ")
+        val valor = readLine()!!.toInt()
+        if (valor >= 24 && valor <=42) {
+            dentro++
+        } else {
+            fora++
+        }
+    }
+print("Quantidade dentro desse intervalo [24,42]: $dentro\n"
++ "Quantidade fora desse intervalo: $fora")
+
+
+}
