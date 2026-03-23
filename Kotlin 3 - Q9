@@ -1,0 +1,9 @@
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+fun main() {
+    var numero = 101
+    for (i in 1..10) {
+        println(numero)
+        numero++
+    }
+}
