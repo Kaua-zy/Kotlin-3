@@ -1,0 +1,21 @@
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+fun main() {
+    var soma = 0.0
+    for (i in 1..6) {
+     var nota: Double
+     while (true) {
+        print("Digite a $i nota: ")
+        nota = readLine()!!.toDouble()
+        if (nota in 0.0..10.0) {
+            break
+        } else {
+            println("Nota inválida. Digite uma nota entre 0 e 10.")
+        }
+     }
+     soma += nota
+
+    }
+    val media = soma / 6
+    println("A média das notas é: $media")
+}
