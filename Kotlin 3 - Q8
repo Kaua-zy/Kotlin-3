@@ -1,0 +1,9 @@
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+fun main() {
+    print("Digite um valor N: ")
+    val n = readLine()!!.toInt()
+    for (i in 1..n) {
+            println(i)
+        }
+    }
